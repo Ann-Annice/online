@@ -10,6 +10,20 @@ import { WomenComponent } from './women/women.component';
 import { AddtocartComponent } from './addtocart/addtocart.component';
 import { BuyComponent } from './buy/buy.component';
 import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { RouterModule, Routes } from '@angular/router';
+const appRoutes:Routes=[
+  {
+    path:"",component:OnlineshoppingComponent
+  },
+  {
+    path:"cart",component:AddtocartComponent
+  },
+ 
+  {
+    path:"login",component:LoginComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -20,11 +34,13 @@ import { LoginComponent } from './login/login.component';
     WomenComponent,
     AddtocartComponent,
     BuyComponent,
-    LoginComponent
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
