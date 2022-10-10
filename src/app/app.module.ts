@@ -7,6 +7,7 @@ import { OnlineshoppingComponent } from './onlineshopping/onlineshopping.compone
 import { MenComponent } from './men/men.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WomenComponent } from './women/women.component';
+import { AddtocartComponent } from './addtocart/addtocart.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { WomenComponent } from './women/women.component';
     OnlineshoppingComponent,
     MenComponent,
     NavbarComponent,
-    WomenComponent
+    WomenComponent,
+    AddtocartComponent
   ],
   imports: [
     BrowserModule,
